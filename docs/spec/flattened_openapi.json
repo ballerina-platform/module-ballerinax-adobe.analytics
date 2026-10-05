@@ -6,7 +6,7 @@
     "version" : "2.0"
   },
   "servers" : [ {
-    "url" : "//analytics.adobe.io/api"
+    "url" : "https://analytics.adobe.io/api"
   } ],
   "security" : [ {
     "authorization" : [ ],
@@ -40,6 +40,7 @@
       "get" : {
         "tags" : [ "Annotations" ],
         "summary" : "Retrieve all annotations.",
+        "description" : "Retrieve all annotations.",
         "operationId" : "getAnnotations_1",
         "parameters" : [ {
           "name" : "globalCompanyId",
@@ -151,6 +152,7 @@
       "post" : {
         "tags" : [ "Annotations" ],
         "summary" : "Create new annotation",
+        "description" : "Create new annotation.",
         "operationId" : "createAnnotation_1",
         "parameters" : [ {
           "name" : "globalCompanyId",
@@ -212,6 +214,7 @@
       "get" : {
         "tags" : [ "Annotations" ],
         "summary" : "Get existing annotation",
+        "description" : "Get existing annotation.",
         "operationId" : "getAnnotation_1",
         "parameters" : [ {
           "name" : "globalCompanyId",
@@ -267,6 +270,7 @@
       "put" : {
         "tags" : [ "Annotations" ],
         "summary" : "Update existing annotation",
+        "description" : "Update existing annotation.",
         "operationId" : "updateAnnotation_1",
         "parameters" : [ {
           "name" : "globalCompanyId",
@@ -334,6 +338,7 @@
       "delete" : {
         "tags" : [ "Annotations" ],
         "summary" : "Delete existing annotation",
+        "description" : "Delete existing annotation.",
         "operationId" : "deleteAnnotation_1",
         "parameters" : [ {
           "name" : "globalCompanyId",
@@ -656,6 +661,7 @@
       "get" : {
         "tags" : [ "Calculated Metrics" ],
         "summary" : "Retrieve calculated metric functions",
+        "description" : "Retrieve calculated metric functions.",
         "operationId" : "calculatedmetrics_getCalculatedMetricFunctions",
         "parameters" : [ {
           "name" : "globalCompanyId",
@@ -705,6 +711,7 @@
       "get" : {
         "tags" : [ "Calculated Metrics" ],
         "summary" : "Retrieve a calculated metric function by ID",
+        "description" : "Retrieve a calculated metric function by ID.",
         "operationId" : "calculatedmetrics_getCalculatedMetricFunction",
         "parameters" : [ {
           "name" : "globalCompanyId",
@@ -769,6 +776,7 @@
       "post" : {
         "tags" : [ "Calculated Metrics" ],
         "summary" : "Validate a calculated metric definition",
+        "description" : "Validate a calculated metric definition.",
         "operationId" : "calculatedmetrics_validateCalculatedMetric",
         "parameters" : [ {
           "name" : "globalCompanyId",
@@ -1031,6 +1039,7 @@
       "delete" : {
         "tags" : [ "Calculated Metrics" ],
         "summary" : "Delete calculated metrics by ID",
+        "description" : "Delete calculated metrics by ID.",
         "operationId" : "calculatedmetrics_deleteCalculatedMetric",
         "parameters" : [ {
           "name" : "globalCompanyId",
@@ -1085,6 +1094,7 @@
       "get" : {
         "tags" : [ "Component Meta Data" ],
         "summary" : "Retrieve components shared by user",
+        "description" : "Retrieve components shared by user.",
         "parameters" : [ {
           "name" : "globalCompanyId",
           "in" : "path",
@@ -1284,6 +1294,7 @@
       "post" : {
         "tags" : [ "Component Meta Data" ],
         "summary" : "Create search for shared components",
+        "description" : "Create search for shared components.",
         "operationId" : "searchComponentTags",
         "parameters" : [ {
           "name" : "globalCompanyId",
@@ -1361,6 +1372,7 @@
       "get" : {
         "tags" : [ "Component Meta Data" ],
         "summary" : "Retrieve details of share by ID",
+        "description" : "Retrieve details of share by ID.",
         "operationId" : "getShare",
         "parameters" : [ {
           "name" : "globalCompanyId",
@@ -1464,6 +1476,7 @@
       "get" : {
         "tags" : [ "Component Meta Data" ],
         "summary" : "Retrieve component IDs shared with user",
+        "description" : "Retrieve component IDs shared with user.",
         "operationId" : "findAllSharesToCurrentUser",
         "parameters" : [ {
           "name" : "globalCompanyId",
@@ -1504,6 +1517,7 @@
       "post" : {
         "tags" : [ "Component Meta Data" ],
         "summary" : "Create search for component tags",
+        "description" : "Create search for component tags.",
         "operationId" : "searchComponentTags_2",
         "parameters" : [ {
           "name" : "globalCompanyId",
@@ -1560,6 +1574,7 @@
       "get" : {
         "tags" : [ "Component Meta Data" ],
         "summary" : "Retrieve tags for current user company",
+        "description" : "Retrieve tags for current user company.",
         "operationId" : "findAllForCompany",
         "parameters" : [ {
           "name" : "globalCompanyId",
@@ -1827,6 +1842,7 @@
       "get" : {
         "tags" : [ "Component Meta Data" ],
         "summary" : "Retrieve tag by ID",
+        "description" : "Retrieve tag by ID.",
         "operationId" : "getTagById",
         "parameters" : [ {
           "name" : "globalCompanyId",
@@ -1980,6 +1996,7 @@
       "get" : {
         "tags" : [ "Date Ranges" ],
         "summary" : "Retrieve configuration for a date range",
+        "description" : "Retrieve configuration for a date range.",
         "operationId" : "getDateRange_1",
         "parameters" : [ {
           "name" : "globalCompanyId",
@@ -2043,6 +2060,7 @@
       "put" : {
         "tags" : [ "Date Ranges" ],
         "summary" : "Update configuration for a date range",
+        "description" : "Update configuration for a date range.",
         "parameters" : [ {
           "name" : "globalCompanyId",
           "in" : "path",
@@ -2117,6 +2135,7 @@
       "delete" : {
         "tags" : [ "Date Ranges" ],
         "summary" : "Delete a date range",
+        "description" : "Delete a date range.",
         "parameters" : [ {
           "name" : "globalCompanyId",
           "in" : "path",
@@ -2266,6 +2285,7 @@
       "post" : {
         "tags" : [ "Date Ranges" ],
         "summary" : "Create a date range",
+        "description" : "Create a date range.",
         "parameters" : [ {
           "name" : "globalCompanyId",
           "in" : "path",
@@ -2334,6 +2354,7 @@
       "get" : {
         "tags" : [ "Dimensions" ],
         "summary" : "Retrieve dimensions for a report suite",
+        "description" : "Retrieve dimensions for a report suite.",
         "operationId" : "dimensions_getDimensions",
         "parameters" : [ {
           "name" : "globalCompanyId",
@@ -2431,6 +2452,7 @@
       "get" : {
         "tags" : [ "Dimensions" ],
         "summary" : "Retrieve a dimension by ID",
+        "description" : "Retrieve a dimension by ID.",
         "operationId" : "dimensions_getDimension",
         "parameters" : [ {
           "name" : "globalCompanyId",
@@ -2583,6 +2605,7 @@
       "get" : {
         "tags" : [ "Metrics" ],
         "summary" : "Retrieve a metric by ID",
+        "description" : "Retrieve a metric by ID.",
         "operationId" : "getMetric",
         "parameters" : [ {
           "name" : "globalCompanyId",
@@ -2661,6 +2684,7 @@
       "get" : {
         "tags" : [ "Projects" ],
         "summary" : "Retrieve project configuration",
+        "description" : "Retrieve project configuration.",
         "operationId" : "projects_getProject",
         "parameters" : [ {
           "name" : "globalCompanyId",
@@ -2716,6 +2740,7 @@
       "put" : {
         "tags" : [ "Projects" ],
         "summary" : "Update a project configuration",
+        "description" : "Update a project configuration.",
         "operationId" : "projects_updateProject",
         "parameters" : [ {
           "name" : "globalCompanyId",
@@ -2783,6 +2808,7 @@
       "delete" : {
         "tags" : [ "Projects" ],
         "summary" : "Delete a project",
+        "description" : "Delete a project.",
         "operationId" : "projects_deleteProject",
         "parameters" : [ {
           "name" : "globalCompanyId",
@@ -2827,6 +2853,7 @@
       "post" : {
         "tags" : [ "Projects" ],
         "summary" : "Creates a valid project definition",
+        "description" : "Creates a valid project definition.",
         "operationId" : "projects_validateProject",
         "parameters" : [ {
           "name" : "globalCompanyId",
@@ -2987,6 +3014,7 @@
       "post" : {
         "tags" : [ "Projects" ],
         "summary" : "Create a project",
+        "description" : "Create a project.",
         "operationId" : "projects_createProject",
         "parameters" : [ {
           "name" : "globalCompanyId",
@@ -3060,6 +3088,7 @@
           }
         } ],
         "requestBody" : {
+          "description" : "Report request with dimension, metrics, filters and date range",
           "content" : {
             "application/json" : {
               "schema" : {
@@ -3120,6 +3149,7 @@
           }
         } ],
         "requestBody" : {
+          "description" : "Realtime report request with dimension, metrics and filters",
           "content" : {
             "application/json" : {
               "schema" : {
@@ -3321,6 +3351,7 @@
       "get" : {
         "tags" : [ "Segments" ],
         "summary" : "Retrieve all segments",
+        "description" : "Retrieve all segments.",
         "operationId" : "segments_getSegments",
         "parameters" : [ {
           "name" : "globalCompanyId",
@@ -3468,6 +3499,7 @@
       "post" : {
         "tags" : [ "Segments" ],
         "summary" : "Create a segment",
+        "description" : "Create a segment.",
         "operationId" : "segments_createSegment",
         "parameters" : [ {
           "name" : "globalCompanyId",
@@ -3595,6 +3627,7 @@
       "get" : {
         "tags" : [ "Segments" ],
         "summary" : "Retrieve a segment by ID",
+        "description" : "Retrieve a segment by ID.",
         "operationId" : "segments_getSegment",
         "parameters" : [ {
           "name" : "globalCompanyId",
@@ -3659,6 +3692,7 @@
       "put" : {
         "tags" : [ "Segments" ],
         "summary" : "Update a segment by ID",
+        "description" : "Update a segment by ID.",
         "operationId" : "segments_updateSegment",
         "parameters" : [ {
           "name" : "globalCompanyId",
@@ -3747,6 +3781,7 @@
       "delete" : {
         "tags" : [ "Segments" ],
         "summary" : "Delete a segment by ID",
+        "description" : "Delete a segment by ID.",
         "operationId" : "segments_deleteSegment",
         "parameters" : [ {
           "name" : "globalCompanyId",
@@ -3846,6 +3881,7 @@
       "get" : {
         "tags" : [ "Users" ],
         "summary" : "Retrieve current user",
+        "description" : "Retrieve current user.",
         "operationId" : "getCurrentUser",
         "responses" : {
           "200" : {
@@ -3972,7 +4008,7 @@
           "200" : {
             "description" : "Successful",
             "content" : {
-              "*/*" : {
+              "application/json" : {
                 "schema" : {
                   "$ref" : "#/components/schemas/ResponsePageUsageLogDto"
                 }

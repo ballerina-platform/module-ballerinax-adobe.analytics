@@ -23,17 +23,17 @@ These changes are done in order to improve the overall usability, and as workaro
 
 3. **Server URL scheme**
    - **Original**: `host` and `basePath` with no `schemes`, which flatten turns into `//analytics.adobe.io/api`.
-   - **Updated**: `https://analytics.adobe.io/api`, re-applied by `fix_aligned.py` after every align.
+   - **Updated**: Added `schemes: [https]`, so the server URL becomes `https://analytics.adobe.io/api`.
    - **Reason**: The API is served over HTTPS only.
 
 4. **Audit log response media type**
-   - **Original**: `GET /{globalCompanyId}/auditlogs/usage` declares `*/*` for its 200 response.
-   - **Updated**: `application/json`, re-applied by `fix_aligned.py`.
+   - **Original**: `GET /{globalCompanyId}/auditlogs/usage` declares no `produces`, so its 200 response is generated as `*/*`.
+   - **Updated**: Added `produces: ["application/json"]` to the operation.
    - **Reason**: A `*/*` response generates an `http:Response` return instead of the typed page.
 
 5. **Missing operation descriptions**
    - **Original**: 34 operations have an empty `description`.
-   - **Updated**: The description is the operation summary, re-applied by `fix_aligned.py`.
+   - **Updated**: The description is the operation summary, with a trailing full stop.
    - **Reason**: Generated method documentation would otherwise be empty.
 
 6. **Operation names kept from the 1.x connector**

@@ -7,6 +7,9 @@
   },
   "host": "analytics.adobe.io",
   "basePath": "/api",
+  "schemes": [
+    "https"
+  ],
   "tags": [
     {
       "name": "Annotations"
@@ -49,7 +52,7 @@
           "Annotations"
         ],
         "summary": "Retrieve all annotations.",
-        "description": "",
+        "description": "Retrieve all annotations.",
         "operationId": "getAnnotations_1",
         "produces": [
           "application/json"
@@ -186,7 +189,7 @@
           "Annotations"
         ],
         "summary": "Create new annotation",
-        "description": "",
+        "description": "Create new annotation.",
         "operationId": "createAnnotation_1",
         "produces": [
           "application/json"
@@ -267,7 +270,7 @@
           "Annotations"
         ],
         "summary": "Get existing annotation",
-        "description": "",
+        "description": "Get existing annotation.",
         "operationId": "getAnnotation_1",
         "produces": [
           "application/json"
@@ -344,7 +347,7 @@
           "Annotations"
         ],
         "summary": "Update existing annotation",
-        "description": "",
+        "description": "Update existing annotation.",
         "operationId": "updateAnnotation_1",
         "produces": [
           "application/json"
@@ -430,7 +433,7 @@
           "Annotations"
         ],
         "summary": "Delete existing annotation",
-        "description": "",
+        "description": "Delete existing annotation.",
         "operationId": "deleteAnnotation_1",
         "produces": [
           "application/json"
@@ -768,7 +771,7 @@
           "Calculated Metrics"
         ],
         "summary": "Retrieve calculated metric functions",
-        "description": "",
+        "description": "Retrieve calculated metric functions.",
         "operationId": "calculatedmetrics_getCalculatedMetricFunctions",
         "produces": [
           "application/json"
@@ -815,7 +818,7 @@
           "Calculated Metrics"
         ],
         "summary": "Retrieve a calculated metric function by ID",
-        "description": "",
+        "description": "Retrieve a calculated metric function by ID.",
         "operationId": "calculatedmetrics_getCalculatedMetricFunction",
         "produces": [
           "application/json"
@@ -872,7 +875,7 @@
           "Calculated Metrics"
         ],
         "summary": "Validate a calculated metric definition",
-        "description": "",
+        "description": "Validate a calculated metric definition.",
         "operationId": "calculatedmetrics_validateCalculatedMetric",
         "consumes": [
           "application/json"
@@ -1134,7 +1137,7 @@
           "Calculated Metrics"
         ],
         "summary": "Delete calculated metrics by ID",
-        "description": "",
+        "description": "Delete calculated metrics by ID.",
         "operationId": "calculatedmetrics_deleteCalculatedMetric",
         "produces": [
           "application/json"
@@ -1185,7 +1188,7 @@
           "Component Meta Data"
         ],
         "summary": "Retrieve components shared by user",
-        "description": "",
+        "description": "Retrieve components shared by user.",
         "produces": [
           "application/json"
         ],
@@ -1382,7 +1385,7 @@
           "Component Meta Data"
         ],
         "summary": "Create search for shared components",
-        "description": "",
+        "description": "Create search for shared components.",
         "operationId": "searchComponentTags",
         "consumes": [
           "application/json"
@@ -1462,7 +1465,7 @@
           "Component Meta Data"
         ],
         "summary": "Retrieve details of share by ID",
-        "description": "",
+        "description": "Retrieve details of share by ID.",
         "operationId": "getShare",
         "produces": [
           "application/json"
@@ -1563,7 +1566,7 @@
           "Component Meta Data"
         ],
         "summary": "Retrieve component IDs shared with user",
-        "description": "",
+        "description": "Retrieve component IDs shared with user.",
         "operationId": "findAllSharesToCurrentUser",
         "produces": [
           "application/json"
@@ -1604,7 +1607,7 @@
           "Component Meta Data"
         ],
         "summary": "Create search for component tags",
-        "description": "",
+        "description": "Create search for component tags.",
         "operationId": "searchComponentTags_2",
         "consumes": [
           "application/json"
@@ -1662,7 +1665,7 @@
           "Component Meta Data"
         ],
         "summary": "Retrieve tags for current user company",
-        "description": "",
+        "description": "Retrieve tags for current user company.",
         "operationId": "findAllForCompany",
         "produces": [
           "application/json"
@@ -1949,7 +1952,7 @@
           "Component Meta Data"
         ],
         "summary": "Retrieve tag by ID",
-        "description": "",
+        "description": "Retrieve tag by ID.",
         "operationId": "getTagById",
         "produces": [
           "application/json"
@@ -2108,7 +2111,7 @@
           "Date Ranges"
         ],
         "summary": "Retrieve configuration for a date range",
-        "description": "",
+        "description": "Retrieve configuration for a date range.",
         "operationId": "getDateRange_1",
         "produces": [
           "application/json"
@@ -2182,7 +2185,7 @@
           "Date Ranges"
         ],
         "summary": "Update configuration for a date range",
-        "description": "",
+        "description": "Update configuration for a date range.",
         "produces": [
           "application/json"
         ],
@@ -2264,7 +2267,7 @@
           "Date Ranges"
         ],
         "summary": "Delete a date range",
-        "description": "",
+        "description": "Delete a date range.",
         "produces": [
           "application/json"
         ],
@@ -2429,7 +2432,7 @@
           "Date Ranges"
         ],
         "summary": "Create a date range",
-        "description": "",
+        "description": "Create a date range.",
         "produces": [
           "application/json"
         ],
@@ -2506,7 +2509,7 @@
           "Dimensions"
         ],
         "summary": "Retrieve dimensions for a report suite",
-        "description": "",
+        "description": "Retrieve dimensions for a report suite.",
         "operationId": "dimensions_getDimensions",
         "produces": [
           "application/json"
@@ -2626,7 +2629,7 @@
           "Dimensions"
         ],
         "summary": "Retrieve a dimension by ID",
-        "description": "",
+        "description": "Retrieve a dimension by ID.",
         "operationId": "dimensions_getDimension",
         "produces": [
           "application/json"
@@ -2802,7 +2805,7 @@
           "Metrics"
         ],
         "summary": "Retrieve a metric by ID",
-        "description": "",
+        "description": "Retrieve a metric by ID.",
         "operationId": "getMetric",
         "produces": [
           "application/json"
@@ -2884,7 +2887,7 @@
           "Projects"
         ],
         "summary": "Retrieve project configuration",
-        "description": "",
+        "description": "Retrieve project configuration.",
         "operationId": "projects_getProject",
         "produces": [
           "application/json"
@@ -2947,7 +2950,7 @@
           "Projects"
         ],
         "summary": "Update a project configuration",
-        "description": "",
+        "description": "Update a project configuration.",
         "operationId": "projects_updateProject",
         "produces": [
           "application/json"
@@ -3019,7 +3022,7 @@
           "Projects"
         ],
         "summary": "Delete a project",
-        "description": "",
+        "description": "Delete a project.",
         "operationId": "projects_deleteProject",
         "produces": [
           "application/json"
@@ -3064,7 +3067,7 @@
           "Projects"
         ],
         "summary": "Creates a valid project definition",
-        "description": "",
+        "description": "Creates a valid project definition.",
         "operationId": "projects_validateProject",
         "consumes": [
           "application/json"
@@ -3237,7 +3240,7 @@
           "Projects"
         ],
         "summary": "Create a project",
-        "description": "",
+        "description": "Create a project.",
         "operationId": "projects_createProject",
         "produces": [
           "application/json"
@@ -3326,7 +3329,8 @@
             "required": false,
             "schema": {
               "$ref": "#/definitions/RankedRequest"
-            }
+            },
+            "description": "Report request with dimension, metrics, filters and date range"
           }
         ],
         "responses": {
@@ -3379,7 +3383,8 @@
             "required": false,
             "schema": {
               "$ref": "#/definitions/RankedRequest"
-            }
+            },
+            "description": "Realtime report request with dimension, metrics and filters"
           }
         ],
         "responses": {
@@ -3554,7 +3559,7 @@
           "Segments"
         ],
         "summary": "Retrieve all segments",
-        "description": "",
+        "description": "Retrieve all segments.",
         "operationId": "segments_getSegments",
         "produces": [
           "application/json"
@@ -3729,7 +3734,7 @@
           "Segments"
         ],
         "summary": "Create a segment",
-        "description": "",
+        "description": "Create a segment.",
         "operationId": "segments_createSegment",
         "consumes": [
           "application/json"
@@ -3873,7 +3878,7 @@
           "Segments"
         ],
         "summary": "Retrieve a segment by ID",
-        "description": "",
+        "description": "Retrieve a segment by ID.",
         "operationId": "segments_getSegment",
         "produces": [
           "application/json"
@@ -3955,7 +3960,7 @@
           "Segments"
         ],
         "summary": "Update a segment by ID",
-        "description": "",
+        "description": "Update a segment by ID.",
         "operationId": "segments_updateSegment",
         "consumes": [
           "application/json"
@@ -4058,7 +4063,7 @@
           "Segments"
         ],
         "summary": "Delete a segment by ID",
-        "description": "",
+        "description": "Delete a segment by ID.",
         "operationId": "segments_deleteSegment",
         "produces": [
           "application/json"
@@ -4157,7 +4162,7 @@
           "Users"
         ],
         "summary": "Retrieve current user",
-        "description": "",
+        "description": "Retrieve current user.",
         "operationId": "getCurrentUser",
         "produces": [
           "application/json"
@@ -4190,6 +4195,9 @@
         "summary": "Retrieve logs for provided search criteria",
         "description": "This API returns the usage and access logs for a given date range within a 3 month period. This API authenticates with an IMS user token.",
         "operationId": "getUsageAccessLogs",
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "name": "globalCompanyId",

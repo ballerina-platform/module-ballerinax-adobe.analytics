@@ -58,6 +58,7 @@
                     "Annotations"
                 ],
                 "summary": "Retrieve all annotations.",
+                "description": "Retrieve all annotations.",
                 "operationId": "listAnnotations",
                 "parameters": [
                     {
@@ -229,14 +230,14 @@
                             }
                         }
                     }
-                },
-                "description": "Retrieve all annotations."
+                }
             },
             "post": {
                 "tags": [
                     "Annotations"
                 ],
                 "summary": "Create new annotation",
+                "description": "Create new annotation.",
                 "operationId": "createAnnotation",
                 "parameters": [
                     {
@@ -323,8 +324,7 @@
                         }
                     }
                 },
-                "x-codegen-request-body-name": "body",
-                "description": "Create new annotation."
+                "x-codegen-request-body-name": "body"
             }
         },
         "/{globalCompanyId}/annotations/{id}": {
@@ -333,6 +333,7 @@
                     "Annotations"
                 ],
                 "summary": "Get existing annotation",
+                "description": "Get existing annotation.",
                 "operationId": "getAnnotation",
                 "parameters": [
                     {
@@ -418,14 +419,14 @@
                             }
                         }
                     }
-                },
-                "description": "Get existing annotation."
+                }
             },
             "put": {
                 "tags": [
                     "Annotations"
                 ],
                 "summary": "Update existing annotation",
+                "description": "Update existing annotation.",
                 "operationId": "updateAnnotation",
                 "parameters": [
                     {
@@ -523,14 +524,14 @@
                         }
                     }
                 },
-                "x-codegen-request-body-name": "body",
-                "description": "Update existing annotation."
+                "x-codegen-request-body-name": "body"
             },
             "delete": {
                 "tags": [
                     "Annotations"
                 ],
                 "summary": "Delete existing annotation",
+                "description": "Delete existing annotation.",
                 "operationId": "deleteAnnotation",
                 "parameters": [
                     {
@@ -579,8 +580,7 @@
                             }
                         }
                     }
-                },
-                "description": "Delete existing annotation."
+                }
             }
         },
         "/{globalCompanyId}/calculatedmetrics": {
@@ -981,6 +981,7 @@
                     "Calculated Metrics"
                 ],
                 "summary": "Retrieve calculated metric functions",
+                "description": "Retrieve calculated metric functions.",
                 "operationId": "getCalculatedMetricFunctions",
                 "parameters": [
                     {
@@ -1031,8 +1032,7 @@
                             }
                         }
                     }
-                },
-                "description": "Retrieve calculated metric functions."
+                }
             }
         },
         "/{globalCompanyId}/calculatedmetrics/functions/{id}": {
@@ -1041,6 +1041,7 @@
                     "Calculated Metrics"
                 ],
                 "summary": "Retrieve a calculated metric function by ID",
+                "description": "Retrieve a calculated metric function by ID.",
                 "operationId": "getCalculatedMetricFunction",
                 "parameters": [
                     {
@@ -1109,8 +1110,7 @@
                             }
                         }
                     }
-                },
-                "description": "Retrieve a calculated metric function by ID."
+                }
             }
         },
         "/{globalCompanyId}/calculatedmetrics/validate": {
@@ -1119,6 +1119,7 @@
                     "Calculated Metrics"
                 ],
                 "summary": "Validate a calculated metric definition",
+                "description": "Validate a calculated metric definition.",
                 "operationId": "validateCalculatedMetric",
                 "parameters": [
                     {
@@ -1200,8 +1201,7 @@
                         }
                     }
                 },
-                "x-codegen-request-body-name": "body",
-                "description": "Validate a calculated metric definition."
+                "x-codegen-request-body-name": "body"
             }
         },
         "/{globalCompanyId}/calculatedmetrics/{id}": {
@@ -1458,6 +1458,7 @@
                     "Calculated Metrics"
                 ],
                 "summary": "Delete calculated metrics by ID",
+                "description": "Delete calculated metrics by ID.",
                 "operationId": "deleteCalculatedMetric",
                 "parameters": [
                     {
@@ -1516,8 +1517,7 @@
                             }
                         }
                     }
-                },
-                "description": "Delete calculated metrics by ID."
+                }
             }
         },
         "/{globalCompanyId}/componentmetadata/shares": {
@@ -1526,6 +1526,7 @@
                     "Component Meta Data"
                 ],
                 "summary": "Retrieve components shared by user",
+                "description": "Retrieve components shared by user.",
                 "parameters": [
                     {
                         "name": "globalCompanyId",
@@ -1611,8 +1612,7 @@
                         "content": {}
                     }
                 },
-                "operationId": "findAllSharesForCompany",
-                "description": "Retrieve components shared by user."
+                "operationId": "findAllSharesForCompany"
             },
             "put": {
                 "tags": [
@@ -1774,6 +1774,7 @@
                     "Component Meta Data"
                 ],
                 "summary": "Create search for shared components",
+                "description": "Create search for shared components.",
                 "operationId": "searchComponentShares",
                 "parameters": [
                     {
@@ -1864,8 +1865,7 @@
                         }
                     }
                 },
-                "x-codegen-request-body-name": "body",
-                "description": "Create search for shared components."
+                "x-codegen-request-body-name": "body"
             }
         },
         "/{globalCompanyId}/componentmetadata/shares/{id}": {
@@ -1874,6 +1874,7 @@
                     "Component Meta Data"
                 ],
                 "summary": "Retrieve details of share by ID",
+                "description": "Retrieve details of share by ID.",
                 "operationId": "getShareById",
                 "parameters": [
                     {
@@ -1922,8 +1923,7 @@
                         "description": "Invalid component type",
                         "content": {}
                     }
-                },
-                "description": "Retrieve details of share by ID."
+                }
             },
             "delete": {
                 "tags": [
@@ -2000,6 +2000,7 @@
                     "Component Meta Data"
                 ],
                 "summary": "Retrieve component IDs shared with user",
+                "description": "Retrieve component IDs shared with user.",
                 "operationId": "getComponentsSharedToMe",
                 "parameters": [
                     {
@@ -2040,8 +2041,7 @@
                             }
                         }
                     }
-                },
-                "description": "Retrieve component IDs shared with user."
+                }
             }
         },
         "/{globalCompanyId}/componentmetadata/tags/component/search": {
@@ -2050,6 +2050,7 @@
                     "Component Meta Data"
                 ],
                 "summary": "Create search for component tags",
+                "description": "Create search for component tags.",
                 "operationId": "searchComponentTags",
                 "parameters": [
                     {
@@ -2111,8 +2112,7 @@
                         }
                     }
                 },
-                "x-codegen-request-body-name": "body",
-                "description": "Create search for component tags."
+                "x-codegen-request-body-name": "body"
             }
         },
         "/{globalCompanyId}/componentmetadata/tags": {
@@ -2121,6 +2121,7 @@
                     "Component Meta Data"
                 ],
                 "summary": "Retrieve tags for current user company",
+                "description": "Retrieve tags for current user company.",
                 "operationId": "findAllTagsForCompany",
                 "parameters": [
                     {
@@ -2177,8 +2178,7 @@
                         "description": "Unable to retrieve list of tags for user.",
                         "content": {}
                     }
-                },
-                "description": "Retrieve tags for current user company."
+                }
             },
             "post": {
                 "tags": [
@@ -2465,6 +2465,7 @@
                     "Component Meta Data"
                 ],
                 "summary": "Retrieve tag by ID",
+                "description": "Retrieve tag by ID.",
                 "operationId": "getTagById",
                 "parameters": [
                     {
@@ -2510,8 +2511,7 @@
                         "description": "Unable to find a tag with the given ID",
                         "content": {}
                     }
-                },
-                "description": "Retrieve tag by ID."
+                }
             },
             "delete": {
                 "tags": [
@@ -2662,6 +2662,7 @@
                     "Date Ranges"
                 ],
                 "summary": "Retrieve configuration for a date range",
+                "description": "Retrieve configuration for a date range.",
                 "operationId": "getDateRange",
                 "parameters": [
                     {
@@ -2748,14 +2749,14 @@
                             }
                         }
                     }
-                },
-                "description": "Retrieve configuration for a date range."
+                }
             },
             "put": {
                 "tags": [
                     "Date Ranges"
                 ],
                 "summary": "Update configuration for a date range",
+                "description": "Update configuration for a date range.",
                 "parameters": [
                     {
                         "name": "globalCompanyId",
@@ -2854,14 +2855,14 @@
                     }
                 },
                 "x-codegen-request-body-name": "body",
-                "operationId": "updateDateRange",
-                "description": "Update configuration for a date range."
+                "operationId": "updateDateRange"
             },
             "delete": {
                 "tags": [
                     "Date Ranges"
                 ],
                 "summary": "Delete a date range",
+                "description": "Delete a date range.",
                 "parameters": [
                     {
                         "name": "globalCompanyId",
@@ -2910,8 +2911,7 @@
                         }
                     }
                 },
-                "operationId": "deleteDateRange",
-                "description": "Delete a date range."
+                "operationId": "deleteDateRange"
             }
         },
         "/{globalCompanyId}/dateranges": {
@@ -3080,6 +3080,7 @@
                     "Date Ranges"
                 ],
                 "summary": "Create a date range",
+                "description": "Create a date range.",
                 "parameters": [
                     {
                         "name": "globalCompanyId",
@@ -3167,8 +3168,7 @@
                     }
                 },
                 "x-codegen-request-body-name": "body",
-                "operationId": "createDateRange",
-                "description": "Create a date range."
+                "operationId": "createDateRange"
             }
         },
         "/{globalCompanyId}/dimensions": {
@@ -3177,6 +3177,7 @@
                     "Dimensions"
                 ],
                 "summary": "Retrieve dimensions for a report suite",
+                "description": "Retrieve dimensions for a report suite.",
                 "operationId": "getDimensionsForReportSuite",
                 "parameters": [
                     {
@@ -3318,8 +3319,7 @@
                         "description": "Unexpected internal server error",
                         "content": {}
                     }
-                },
-                "description": "Retrieve dimensions for a report suite."
+                }
             }
         },
         "/{globalCompanyId}/dimensions/{id}": {
@@ -3328,6 +3328,7 @@
                     "Dimensions"
                 ],
                 "summary": "Retrieve a dimension by ID",
+                "description": "Retrieve a dimension by ID.",
                 "operationId": "getDimensionForReportSuite",
                 "parameters": [
                     {
@@ -3429,8 +3430,7 @@
                         "description": "User Doesn't have sufficient privileges",
                         "content": {}
                     }
-                },
-                "description": "Retrieve a dimension by ID."
+                }
             }
         },
         "/{globalCompanyId}/metrics": {
@@ -3548,6 +3548,7 @@
                     "Metrics"
                 ],
                 "summary": "Retrieve a metric by ID",
+                "description": "Retrieve a metric by ID.",
                 "operationId": "getMetricForReportSuite",
                 "parameters": [
                     {
@@ -3643,8 +3644,7 @@
                         "description": "Unexpected internal server error",
                         "content": {}
                     }
-                },
-                "description": "Retrieve a metric by ID."
+                }
             }
         },
         "/{globalCompanyId}/projects/{id}": {
@@ -3653,6 +3653,7 @@
                     "Projects"
                 ],
                 "summary": "Retrieve project configuration",
+                "description": "Retrieve project configuration.",
                 "operationId": "getProjectConfiguration",
                 "parameters": [
                     {
@@ -3724,14 +3725,14 @@
                             }
                         }
                     }
-                },
-                "description": "Retrieve project configuration."
+                }
             },
             "put": {
                 "tags": [
                     "Projects"
                 ],
                 "summary": "Update a project configuration",
+                "description": "Update a project configuration.",
                 "operationId": "updateProjectConfiguration",
                 "parameters": [
                     {
@@ -3815,14 +3816,14 @@
                         }
                     }
                 },
-                "x-codegen-request-body-name": "body",
-                "description": "Update a project configuration."
+                "x-codegen-request-body-name": "body"
             },
             "delete": {
                 "tags": [
                     "Projects"
                 ],
                 "summary": "Delete a project",
+                "description": "Delete a project.",
                 "operationId": "deleteProject",
                 "parameters": [
                     {
@@ -3871,8 +3872,7 @@
                             }
                         }
                     }
-                },
-                "description": "Delete a project."
+                }
             }
         },
         "/{globalCompanyId}/projects/validate": {
@@ -3881,6 +3881,7 @@
                     "Projects"
                 ],
                 "summary": "Creates a valid project definition",
+                "description": "Creates a valid project definition.",
                 "operationId": "validateProjectDefinition",
                 "parameters": [
                     {
@@ -3938,8 +3939,7 @@
                         "content": {}
                     }
                 },
-                "x-codegen-request-body-name": "body",
-                "description": "Creates a valid project definition."
+                "x-codegen-request-body-name": "body"
             }
         },
         "/{globalCompanyId}/projects": {
@@ -4100,6 +4100,7 @@
                     "Projects"
                 ],
                 "summary": "Create a project",
+                "description": "Create a project.",
                 "operationId": "createProject",
                 "parameters": [
                     {
@@ -4172,8 +4173,7 @@
                         }
                     }
                 },
-                "x-codegen-request-body-name": "body",
-                "description": "Create a project."
+                "x-codegen-request-body-name": "body"
             }
         },
         "/{globalCompanyId}/reports": {
@@ -4198,6 +4198,7 @@
                     }
                 ],
                 "requestBody": {
+                    "description": "Report request with dimension, metrics, filters and date range",
                     "content": {
                         "application/json": {
                             "schema": {
@@ -4205,8 +4206,7 @@
                             }
                         }
                     },
-                    "required": false,
-                    "description": "Report request with dimension, metrics, filters and date range"
+                    "required": false
                 },
                 "responses": {
                     "200": {
@@ -4265,6 +4265,7 @@
                     }
                 ],
                 "requestBody": {
+                    "description": "Realtime report request with dimension, metrics and filters",
                     "content": {
                         "application/json": {
                             "schema": {
@@ -4272,8 +4273,7 @@
                             }
                         }
                     },
-                    "required": false,
-                    "description": "Realtime report request with dimension, metrics and filters"
+                    "required": false
                 },
                 "responses": {
                     "200": {
@@ -4530,6 +4530,7 @@
                     "Segments"
                 ],
                 "summary": "Retrieve all segments",
+                "description": "Retrieve all segments.",
                 "operationId": "getAllSegments",
                 "parameters": [
                     {
@@ -4752,14 +4753,14 @@
                         "description": "External API error; Segment retrieval failed",
                         "content": {}
                     }
-                },
-                "description": "Retrieve all segments."
+                }
             },
             "post": {
                 "tags": [
                     "Segments"
                 ],
                 "summary": "Create a segment",
+                "description": "Create a segment.",
                 "operationId": "createSegment",
                 "parameters": [
                     {
@@ -4853,8 +4854,7 @@
                         "content": {}
                     }
                 },
-                "x-codegen-request-body-name": "body",
-                "description": "Create a segment."
+                "x-codegen-request-body-name": "body"
             }
         },
         "/{globalCompanyId}/segments/validate": {
@@ -4929,6 +4929,7 @@
                     "Segments"
                 ],
                 "summary": "Retrieve a segment by ID",
+                "description": "Retrieve a segment by ID.",
                 "operationId": "getSegment",
                 "parameters": [
                     {
@@ -5021,14 +5022,14 @@
                         "description": "External API error; segment retrieval failed",
                         "content": {}
                     }
-                },
-                "description": "Retrieve a segment by ID."
+                }
             },
             "put": {
                 "tags": [
                     "Segments"
                 ],
                 "summary": "Update a segment by ID",
+                "description": "Update a segment by ID.",
                 "operationId": "updateSegment",
                 "parameters": [
                     {
@@ -5145,14 +5146,14 @@
                         "content": {}
                     }
                 },
-                "x-codegen-request-body-name": "body",
-                "description": "Update a segment by ID."
+                "x-codegen-request-body-name": "body"
             },
             "delete": {
                 "tags": [
                     "Segments"
                 ],
                 "summary": "Delete a segment by ID",
+                "description": "Delete a segment by ID.",
                 "operationId": "deleteSegment",
                 "parameters": [
                     {
@@ -5205,8 +5206,7 @@
                         "description": "External API error; Segment delete failed",
                         "content": {}
                     }
-                },
-                "description": "Delete a segment by ID."
+                }
             }
         },
         "/{globalCompanyId}/users": {
@@ -5281,6 +5281,7 @@
                     "Users"
                 ],
                 "summary": "Retrieve current user",
+                "description": "Retrieve current user.",
                 "operationId": "getCurrentUser",
                 "responses": {
                     "200": {
@@ -5293,8 +5294,7 @@
                             }
                         }
                     }
-                },
-                "description": "Retrieve current user."
+                }
             },
             "parameters": [
                 {
