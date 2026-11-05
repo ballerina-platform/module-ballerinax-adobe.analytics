@@ -5,12 +5,9 @@ name = "adobe.analytics"
 version = "2.0.0"
 license = ["Apache-2.0"]
 authors = ["Ballerina"]
-keywords = []
-# icon = "icon.png" # TODO: update icon.png
+keywords = ["Vendor/Adobe", "Area/Marketing & Social Media", "Type/Connector"]
+icon = "icon.png"
 repository = "https://github.com/ballerina-platform/module-ballerinax-adobe.analytics"
 
 [build-options]
 observabilityIncluded = true
-
-[platform.java21]
-graalvmCompatible = true
